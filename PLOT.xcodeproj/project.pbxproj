@@ -19,6 +19,8 @@
 		C10123361844D4C300E55B2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C101231E1844D4C300E55B2B /* UIKit.framework */; };
 		C101233E1844D4C300E55B2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C101233C1844D4C300E55B2B /* InfoPlist.strings */; };
 		C10123401844D4C300E55B2B /* PLOTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C101233F1844D4C300E55B2B /* PLOTTests.m */; };
+		C101234C1844D4F500E55B2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C101234A1844D4F500E55B2B /* ViewController.m */; };
+		C101234D1844D4F500E55B2B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C101234B1844D4F500E55B2B /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		C101233B1844D4C300E55B2B /* PLOTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PLOTTests-Info.plist"; sourceTree = "<group>"; };
 		C101233D1844D4C300E55B2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C101233F1844D4C300E55B2B /* PLOTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLOTTests.m; sourceTree = "<group>"; };
+		C10123491844D4F500E55B2B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C101234A1844D4F500E55B2B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C101234B1844D4F500E55B2B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				C101232A1844D4C300E55B2B /* AppDelegate.m */,
 				C101232C1844D4C300E55B2B /* Images.xcassets */,
 				C10123211844D4C300E55B2B /* Supporting Files */,
+				C10123491844D4F500E55B2B /* ViewController.h */,
+				C101234A1844D4F500E55B2B /* ViewController.m */,
+				C101234B1844D4F500E55B2B /* ViewController.xib */,
 			);
 			path = PLOT;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C10123251844D4C300E55B2B /* InfoPlist.strings in Resources */,
+				C101234D1844D4F500E55B2B /* ViewController.xib in Resources */,
 				C101232D1844D4C300E55B2B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C101234C1844D4F500E55B2B /* ViewController.m in Sources */,
 				C101232B1844D4C300E55B2B /* AppDelegate.m in Sources */,
 				C10123271844D4C300E55B2B /* main.m in Sources */,
 			);
