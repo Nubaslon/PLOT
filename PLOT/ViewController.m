@@ -18,7 +18,7 @@
 }
 
 #define xOffset 30
-#define yBot 100
+#define yBot 200
 #define yTop 0
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -35,7 +35,7 @@
     [super viewDidLoad];
     float x = 10;
     // Do any additional setup after loading the view from its nib.
-    costArray = [[NSArray alloc] initWithObjects:@"24000", @"0", @"15000", @"20000", @"0", @"16000", @"21000", @"0", @"0", @"10000", nil];
+    costArray = [[NSArray alloc] initWithObjects:@"24000", @"0", @"15000", @"20000", @"0", @"16000", @"21000", @"0", @"0", @"17000", @"5000", @"11000", nil];
     float max = 24000;
     for (int i=0; i < [costArray count] ; i++) {
         UIButton *button = [[UIButton alloc] init];

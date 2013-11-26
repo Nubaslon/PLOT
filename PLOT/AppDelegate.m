@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -18,7 +19,7 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ViewController *viewController = [[ViewController alloc] init];
+    MainViewController *viewController = [[MainViewController alloc] init];
     self.window.rootViewController = viewController;
     
     [self.window makeKeyAndVisible];
