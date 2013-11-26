@@ -13,12 +13,13 @@
    // NSArray *costArray;
     UIButton *button;
     NSMutableArray *buttonArray;
+    UILabel *costText;
 }
 
-#define xOffset 15 // отступ друг от друга
-#define yBot 200 // нижняя планка Y
+#define xOffset 17 // отступ друг от друга
+#define yBot 150 // нижняя планка Y
 #define yTop 10 // верхний y
-#define width 10 // ширина
+#define width 14 // ширина
 
 - (id)initWithFrame:(CGRect)frame withPrices:(NSArray *)prices
 {
@@ -27,6 +28,8 @@
         // Initialization code
         _prices = [[NSArray alloc] initWithArray:prices];
         buttonArray = [[NSMutableArray alloc] init];
+        costText = [[UILabel alloc] initWithFrame:CGRectMake(10, yBot + 30, 250, 50)];
+        [self addSubview:costText];
         self.backgroundColor = [UIColor yellowColor];
         [self createPlot];
     }
@@ -35,12 +38,18 @@
 
 -(void)createPlot
 {
-    float x = 10;
+    float x = 0;
     // Do any additional setup after loading the view from its nib.
     //costArray = [[NSArray alloc] initWithObjects:@"24000", @"0", @"15000", @"20000", @"0", @"16000", @"21000", @"0", @"0", @"17000", @"5000", @"11000", nil];
     [buttonArray removeAllObjects];
     NSLog(@"count %d", [_prices count]);
-    float max = 24000;
+    float max = 0;
+    for (int i=0; i<[_prices count]; i++) {
+        if ([[_prices objectAtIndex:i] floatValue] > max) {
+            max = [[_prices objectAtIndex:i] floatValue];
+        }
+    }
+    costText.text = [NSString stringWithFormat:@"Мак стоим - %g", max];
     for (int i=0; i < [_prices count] ; i++) {
         button = [[UIButton alloc] init];
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -50,7 +59,7 @@
         float w = width;
         float h = yBot - y;
         
-        UILabel *dayMonth = [[UILabel alloc] initWithFrame:CGRectMake(x, yBot + 10, 15, 15)];
+        UILabel *dayMonth = [[UILabel alloc] initWithFrame:CGRectMake(x, yBot + 5, 15, 15)];
         dayMonth.text = [NSString stringWithFormat:@"%d", i+1];
         [dayMonth setFont:[UIFont systemFontOfSize:10]];
         [self addSubview:dayMonth];
@@ -86,6 +95,7 @@
         }else
             buttn.backgroundColor = [UIColor blackColor];
     }
+    costText.text = [NSString stringWithFormat:@"Стоимость - %@", [_prices objectAtIndex:[sender tag]]];
     //btn.backgroundColor = [UIColor blueColor];
 }
 /*
