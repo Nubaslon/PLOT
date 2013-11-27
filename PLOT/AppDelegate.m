@@ -23,6 +23,7 @@
     self.window.rootViewController = viewController;
     
     [self.window makeKeyAndVisible];
+    NSLog(@"w - %f h - %f", self.window.frame.size.width, self.window.frame.size.height);
     return YES;
 }
 

@@ -27,13 +27,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    CGRect frameView = CGRectMake(10, 10, self.view.frame.size.width - 20, self.view.frame.size.height - 20);
+    CGRect frameView = CGRectMake(10, 10, 768 - 20, self.view.frame.size.height - 70);
     NSArray *prices = [[NSArray alloc] initWithObjects:@"24000", @"4000", @"15000", @"20000", @"3000", @"16000", @"21000", @"8000", @"22000", @"17000", @"5000", @"11000", @"2000", @"17000",@"20000",@"5000",@"18000",@"5000",@"23000",@"4000",@"6000",@"15000",@"22000",@"17000",@"7000",@"11000",@"20000",@"5000",@"10000",@"20000",nil];
     _plotView = [[PlotView alloc] initWithFrame:frameView withPrices:prices];
+    _plotView.backgroundColor = [UIColor yellowColor];
+    
+    
    // _plotView.prices = [[NSArray alloc] initWithObjects:@"24000", @"0", @"15000", @"20000", @"0", @"16000", @"21000", @"0", @"0", @"17000", @"5000", @"11000", nil];
     [self.view addSubview:_plotView];
     NSLog(@"count12 %d", [_plotView.prices count]);
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {

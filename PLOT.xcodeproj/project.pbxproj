@@ -23,6 +23,7 @@
 		C101233E1844D4C300E55B2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C101233C1844D4C300E55B2B /* InfoPlist.strings */; };
 		C10123401844D4C300E55B2B /* PLOTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C101233F1844D4C300E55B2B /* PLOTTests.m */; };
 		C101234C1844D4F500E55B2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C101234A1844D4F500E55B2B /* ViewController.m */; };
+		C164F5A218460B3B00C72B91 /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = C164F5A118460B3B00C72B91 /* screen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		C101233F1844D4C300E55B2B /* PLOTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLOTTests.m; sourceTree = "<group>"; };
 		C10123491844D4F500E55B2B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C101234A1844D4F500E55B2B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C1553BA61845D0DF0046D6A7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C164F5A118460B3B00C72B91 /* screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screen.png; path = ../../../../Desktop/screen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		C10123191844D4C300E55B2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1553BA61845D0DF0046D6A7 /* QuartzCore.framework */,
 				C101231A1844D4C300E55B2B /* Foundation.framework */,
 				C101231C1844D4C300E55B2B /* CoreGraphics.framework */,
 				C101231E1844D4C300E55B2B /* UIKit.framework */,
@@ -118,6 +122,7 @@
 		C10123201844D4C300E55B2B /* PLOT */ = {
 			isa = PBXGroup;
 			children = (
+				C164F5A118460B3B00C72B91 /* screen.png */,
 				C10123291844D4C300E55B2B /* AppDelegate.h */,
 				C101232A1844D4C300E55B2B /* AppDelegate.m */,
 				C101232C1844D4C300E55B2B /* Images.xcassets */,
@@ -237,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C164F5A218460B3B00C72B91 /* screen.png in Resources */,
 				C10123251844D4C300E55B2B /* InfoPlist.strings in Resources */,
 				C101232D1844D4C300E55B2B /* Images.xcassets in Resources */,
 				571655031844FBD3002EAFA8 /* MainViewController.xib in Resources */,
@@ -337,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -371,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
